@@ -1,0 +1,2307 @@
+{
+	"info": {
+		"_postman_id": "c9975b6f-c0d3-4b19-8f08-7d1d68b7d0ea",
+		"name": "alHayaa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26878651"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "get all categories",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/categories/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"categories",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store a category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"bla bal category\",\r\n    \"file\": \"file_1702123493_8791.png\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/categories/store",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"categories",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/categories/2/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"categories",
+										"2",
+										"show"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update a category",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"secong pro max\",\r\n    \"file\" : \"file_1702123493_8791.png\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/categories/2/update",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"categories",
+										"2",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete a category",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/categories/7/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"categories",
+										"7",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "notification",
+					"item": [
+						{
+							"name": "get all notifications",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/notifications/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"notifications",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store a notification",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "description",
+											"value": "desss",
+											"type": "text"
+										},
+										{
+											"key": "trip_id",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "location_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"value": "file_1702120168_8004.png",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/notifications/store",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"notifications",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one notification",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/notifications/11/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"notifications",
+										"11",
+										"show"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update a notification",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"11 pro max\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/notifications/11/update",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"notifications",
+										"11",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete a notification",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/notifications/11/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"notifications",
+										"11",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "location",
+					"item": [
+						{
+							"name": "get all locations",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/locations/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"locations",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store a location",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"takeoff\": \"damas\",\r\n    \"destination\": \"hama\",\r\n    \"category_id\": 3,\r\n    \"files\": {\r\n        \"file[0]\": \"file_1702130982_8477.jpg\",\r\n        \"file[1]\": \"file_1702131000_9739.png\",\r\n        \"file[2]\": \"file_1702131018_4152.jpg\"  \r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/locations/store",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"locations",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one location",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/locations/1/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"locations",
+										"1",
+										"show"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update a locaion",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "takeoff",
+											"value": "hama",
+											"type": "text"
+										},
+										{
+											"key": "destination",
+											"value": "damas",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"value": "hgaidfnoi.png",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/admins/locations/2/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"locations",
+										"2",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete a location",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/locations/4/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"locations",
+										"4",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "reservation",
+					"item": [
+						{
+							"name": "get all reservations",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/reservations/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"reservations",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store a reservation",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"is_paid\": 1,\r\n    \"ticket_number\": 3,\r\n    \"trip_id\": 2\r\n\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/reservations/store",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"reservations",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one reservation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/reservations/5/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"reservations",
+										"5",
+										"show"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update a reservation",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"is_paid\": 1,\r\n    \"ticket_number\": 23,\r\n    \"trip_id\": 2,\r\n    \"total_price\" : 2000\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/admins/reservations/2/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"reservations",
+										"2",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete a reservation",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/reservations/8/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"reservations",
+										"8",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Trip",
+					"item": [
+						{
+							"name": "get all trips",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/trips/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"trips",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store a trip",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"location_id\": 2,\r\n    \"price\": 3000,\r\n    \"duration\": 3,\r\n    \"description\": \"description\",\r\n    \"price_description\": \"price_description\",\r\n    \"start_time\": \"2024-1-1\",\r\n    \"vehicle_id\": 1\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/trips/store",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"trips",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one tirp",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/trips/131/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"trips",
+										"131",
+										"show"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update a trip",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n       \"price\": 3000,\r\n        \"duration\": 2,\r\n        \"description\": \"desc\",\r\n        \"price_description\": \"price_description\",\r\n        \"start_time\": \"2023-12-31\",\r\n        \"location_id\": 2,\r\n        \"vehicle_id\": 3\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/admins/trips/131/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"trips",
+										"131",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete a trip",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/trips/131/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"trips",
+										"131",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "vehicle",
+					"item": [
+						{
+							"name": "get all vehicles",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/vehicles/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"vehicles",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store a vehicle",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rows_num\":8,\r\n    \"left_seat\": 2,\r\n    \"right_seat\": 5,\r\n    \"last_row\": 2,\r\n    \"color\": \"red\"\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/vehicles/store",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"vehicles",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one vehicle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/vehicles/4/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"vehicles",
+										"4",
+										"show"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update a vehicle",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"color\": \"blue\",\r\n        \"full_seat_number\": 67,\r\n        \"last_row\": 3,\r\n        \"rows_number\": 5,\r\n        \"left_seat\": 2,\r\n        \"right_seat\": 9\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/admins/vehicles/1/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"vehicles",
+										"1",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete a vehicle",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/vehicles/10/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"vehicles",
+										"10",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "seat",
+					"item": [
+						{
+							"name": "get all seats",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/seats/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store a seat",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"abo hmeed\",\r\n    \"last_name\": \"ali\",\r\n    \"email\": \"ahmad@test.com\",\r\n    \"phone_number\": \"25164156\",\r\n    \"father_name\": \"ahmad\",\r\n    \"mother_name\": \"ahmad\",\r\n    \"birth_date\": \"2010-5-8\",\r\n    \"birth_location\": \"aleppo\",\r\n    \"nid\": \"213456734\",\r\n    \"reservation_id\": 2,\r\n    \"vehicle_id\": 1,\r\n    \"is_company\": 0,\r\n    \"files\": [\r\n            \"http://localhost:8000/media/28/file_1702130982_8477.jpg\",\r\n            \"http://localhost:8000/media/29/file_1702131000_9739.png\"\r\n        ]\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/seats/store",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one seat",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/seats/2/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"2",
+										"show"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update a seat",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"ana mohammad shoo\",\r\n    \"last_name\": \"ali\",\r\n    \"email\": \"ahmad@test.com\",\r\n    \"phone_number\": \"25164156\",\r\n    \"father_name\": \"ahmad\",\r\n    \"mother_name\": \"ahmad\",\r\n    \"birth_date\": \"2010-5-8\",\r\n    \"birth_location\": \"aleppo\",\r\n    \"nid\": \"213456734\",\r\n    \"reservation_id\": 2,\r\n    \"vehicle_id\": 1\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/admins/seats/4/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"4",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete a seat",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/seats/5/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"5",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "setting",
+					"item": [
+						{
+							"name": "get all setting",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/settings/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"settings",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store a setting",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"about_us\": \"about us section\",\r\n    \"phone_number\": \"1452563256\",\r\n    \"email\": \"ahmad@test.com\",\r\n    \"facebook\": \"facebook name\",\r\n    \"website\": \"laravel.com\",\r\n    \"address\": \"aleppo\",\r\n    \"work_time\": \"10 to 5\"\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/settings/store",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"settings",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update a setting",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"whiiiiiiiiiiiiiiiiiiiiii@test.com\",\r\n    \"about_us\": \"about us section\",\r\n    \"phone_number\": \"1452563256\",\r\n    \"facebook\": \"facebook name\",\r\n    \"website\": \"laravel.com\",\r\n    \"address\": \"aleppo\",\r\n    \"work_time\": \"10 to 5\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/admins/settings/1/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"settings",
+										"1",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete a setting",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/settings/1/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"settings",
+										"1",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "inventory",
+					"item": [
+						{
+							"name": "get all inventory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/inventories/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"inventories",
+										"index"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "get all categories",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/users/categories/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"categories",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/users/categories/88/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"categories",
+										"88",
+										"show"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "notification",
+					"item": [
+						{
+							"name": "get all notifications",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/users/notifications/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"notifications",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one notification",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/notifications/2/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"notifications",
+										"2",
+										"show"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "location",
+					"item": [
+						{
+							"name": "get all locations",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/locations/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"locations",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one location",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"takeoff\": \"damas\",\r\n    \"destination\": \"hama\",\r\n    \"category_id\": 3,\r\n    \"files\": {\r\n        \"file[0]\": \"file_1702130982_8477.jpg\",\r\n        \"file[1]\": \"file_1702131000_9739.png\",\r\n        \"file[2]\": \"file_1702131018_4152.jpg\"  \r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/locations/2/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"locations",
+										"2",
+										"show"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "reservation",
+					"item": [
+						{
+							"name": "get all reservations",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/reservations/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"reservations",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one reservation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/reservations/2/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"reservations",
+										"2",
+										"show"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Trip",
+					"item": [
+						{
+							"name": "get all trips",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/trips/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"trips",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one tirp",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/trips/1/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"trips",
+										"1",
+										"show"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "vehicle",
+					"item": [
+						{
+							"name": "get all vehicles",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/vehicles/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"vehicles",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one vehicle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/vehicles/4/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"vehicles",
+										"4",
+										"show"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "seat",
+					"item": [
+						{
+							"name": "get all seats",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/seats/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store a seat",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"abo hmeed\",\r\n    \"last_name\": \"ali\",\r\n    \"email\": \"ahmad@test.com\",\r\n    \"phone_number\": \"25164156\",\r\n    \"father_name\": \"ahmad\",\r\n    \"mother_name\": \"ahmad\",\r\n    \"birth_date\": \"2010-5-8\",\r\n    \"birth_location\": \"aleppo\",\r\n    \"nid\": \"213456734\",\r\n    \"reservation_id\": 2,\r\n    \"vehicle_id\": 1,\r\n    \"files\": [\r\n            \"http://localhost:8000/media/28/file_1702130982_8477.jpg\",\r\n            \"http://localhost:8000/media/29/file_1702131000_9739.png\"\r\n        ]\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8000/api/admins/seats/store",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show one seat",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admins/seats/3/show",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"3",
+										"show"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update a seat",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"ana mohammad shoo\",\r\n    \"last_name\": \"ali\",\r\n    \"email\": \"ahmad@test.com\",\r\n    \"phone_number\": \"25164156\",\r\n    \"father_name\": \"ahmad\",\r\n    \"mother_name\": \"ahmad\",\r\n    \"birth_date\": \"2010-5-8\",\r\n    \"birth_location\": \"aleppo\",\r\n    \"nid\": \"213456734\",\r\n    \"reservation_id\": 2,\r\n    \"vehicle_id\": 1\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/admins/seats/4/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"4",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete a seat",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/seats/5/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"seats",
+										"5",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "setting",
+					"item": [
+						{
+							"name": "get all setting",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmMyZTRjNDE4MGRkMTQzODQyOGI1NGQwYjA1MTRmMWU2ZWFmNjgzYzVjNGY1MGQ1Y2YyMzIwZGE4OWU1ZGRjYjFhZjRiNGE2NzlmNjUyNjIiLCJpYXQiOjE3MDE2ODUwNzIuMzI0MzY3LCJuYmYiOjE3MDE2ODUwNzIuMzI0MzcxLCJleHAiOjE3MzMzMDc0NzIuMzA2NzE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LyTv-SbOUF35wsR8qbbnTOPbx9DyRQtrF1GSrtTW6Rl39jXRJOwixcTAUBbZKhKyxLVNXbrPdfr7xwPX3CmlGXNZbobiO1E3dxRhVoOLpX9B1hoHuiYtgw-tCPJJkC3L-thXuU_2g68P4IOZi1ScKMiHfd431uhE1xg2CbdPIip2A3_BDp5RNXTUU2Cdk3vnghdo4i4oNKVZyQuAxubeEoJiSxh2Sr3x_NMB7UDvir9YwCXvBMLKjxtLXAI3iRXmco7xqANS0dU14CZ5n4-UWj42y2y_8_moh4TbqFTzV-ydDxrya4iXiRTr0TPcw9Cml1bGj4w3kEjfq4M5w9BVB3SvmyG7IYUUoeNVd4URK5IdlGZBb39s575JKgOsWlUXGP8wLNj-GcQna7RM31_L-BeJTYXbgoam9m6-KnwiKzhvJYhhVwTNqt16d9SMXctm9i1W-mwUK6IGvpuZWIUmCjrlD5AiBxDYrj3aNgojGVYmnT1bUNn_kn4N7vNjtNB8kfxv3IoUW9y8nFoCR-QOwNOcuAoYBfUWbsvLsAWClZvC2YRBDbpQIYssfvboCcZzlJ0Sg4yx2WNjKpbh24QCf2WqhpXXVewcFA0ZnFYkEIL4eFX04QPwAXxKwBwp9A39KzNSq8QM5ZMv63SpNmZapMo-09QrAXheOYulZEawBFU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/admins/settings/index",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admins",
+										"settings",
+										"index"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "file",
+			"item": [
+				{
+					"name": "upload-file",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file\n",
+									"type": "file",
+									"src": "/C:/Users/user/Downloads/Telegram Desktop/IMG_20231007_165225.jpg"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/upload-file",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"upload-file"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "oauth token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "t2qnu2zHvFZYRs5qWh4tvp2ZrxY650oGCyOF7H2h",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "ahmad@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/oauth/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

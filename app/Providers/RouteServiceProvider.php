@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Seat;
+use App\Models\User;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
@@ -28,10 +30,22 @@ class RouteServiceProvider extends ServiceProvider
             return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
         });
 
+        // Route::bind('my-seat', function (User $user) {
+        //     return Seat::where('id', $user->id)->firstOrFail();
+        // });
+
         $this->routes(function () {
             Route::middleware('api')
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
+
+                Route::middleware('api')
+                ->prefix('api/admins')
+                ->group(base_path('routes/admin.php'));
+
+                Route::middleware('api')
+                ->prefix('api/users')
+                ->group(base_path('routes/user.php'));
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
